@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Island Vibes - Log In</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- Clean Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="fs-4 me-2">🌴</span> <strong>Island Vibes</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
+                    <!-- Add id="auth-nav-item" here -->
+                    <li class="nav-item" id="auth-nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="text-white text-center py-5 shadow-sm" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;">
+        <div class="container py-3">
+            <h1 class="display-5 fw-bold">Welcome Back</h1>
+            <p class="lead fs-6 mt-1">Log in to manage your festival bookings and account.</p>
+        </div>
+    </header>
+
+    <!-- Main Login Card -->
+    <main class="container my-5 flex-grow-1 d-flex align-items-center justify-content-center">
+        <div class="row w-100 justify-content-center">
+            <div class="col-md-7 col-lg-5">
+                <div class="card shadow border-0 rounded-4 overflow-hidden">
+
+                    <!-- Top Page Switcher Buttons -->
+                    <div class="card-header bg-white border-bottom-0 pt-4 px-4 text-center">
+                        <div class="btn-group w-100 shadow-sm rounded-pill overflow-hidden" role="group">
+                            <a href="register.html" class="btn btn-outline-dark py-2">Sign Up</a>
+                            <a href="login.html" class="btn btn-dark py-2 active">Log In</a>
+                        </div>
+                    </div>
+
+                    <!-- Login Form Body -->
+                    <div class="card-body p-4 p-md-5">
+                        <h3 class="card-title text-center fw-bold mb-4">Log In to Account</h3>
+
+                        <form action="index.html" method="GET">
+                            <div class="mb-3">
+                                <label for="loginEmail" class="form-label fw-semibold">Email Address</label>
+                                <input type="email" class="form-control form-control-lg fs-6" id="loginEmail" placeholder="name@example.com" required>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="loginPassword" class="form-label fw-semibold">Password</label>
+                                <input type="password" class="form-control form-control-lg fs-6" id="loginPassword" placeholder="••••••••" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-dark btn-lg w-100 py-3 rounded-3 fw-bold">Log In</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Island Vibes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript (Add this to every file) -->
+    <script src="app.js"></script>
+</body>
+</html>

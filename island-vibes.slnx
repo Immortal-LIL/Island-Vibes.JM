@@ -1,0 +1,23 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="booking-success.html" />
+    <File Path="dancehall.html" />
+    <File Path="explore.html" />
+    <File Path="index.html" />
+    <File Path="login.html" />
+    <File Path="reggae.html" />
+    <File Path="register.html" />
+    <File Path="soca.html" />
+  </Folder>
+  <Folder Name="/Solution Items/css/">
+    <File Path="styles.css" />
+  </Folder>
+  <Folder Name="/Solution Items/css/fonts/">
+    <File Path="../../../Downloads/bite-chocolate-font.zip" />
+    <File Path="../../../Downloads/bite-chocolate-font/BiteChocolate-2RGl.ttf" />
+  </Folder>
+  <Folder Name="/Solution Items/images/" />
+  <Folder Name="/Solution Items/js/">
+    <File Path="app.js" />
+  </Folder>
+</Solution>

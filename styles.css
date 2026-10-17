@@ -1,0 +1,38 @@
+﻿/* Import Local Custom Font: Bite Chocolate */
+@font-face {
+    font-family: 'Bite Chocolate';
+    src: url('fonts/BiteChocolate.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Fallback cursive web font for online preview */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* Apply Bite Chocolate to Brand Logo and Main Headings */
+.navbar-brand,
+h1, h2, h3,
+.display-3, .display-4, .display-5 {
+    font-family: 'Bite Chocolate', 'Great Vibes', cursive !important;
+    letter-spacing: 1px;
+}
+
+/* Keep body text clean and readable */
+body, p, label, input, button, select {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card hover shadow effect */
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+
+/* Footer styling */
+footer {
+    font-size: 0.9rem;
+}

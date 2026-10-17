@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Island Vibes - Register</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- Clean Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="fs-4 me-2">🌴</span> <strong>Island Vibes</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
+                    <li class="nav-item" id="auth-nav-item"><a class="nav-link active" href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Register Hero Banner -->
+    <header class="text-white text-center py-5 shadow-sm" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;">
+        <div class="container py-3">
+            <h1 class="display-5 fw-bold">Join the Movement</h1>
+            <p class="lead fs-6 mt-1">Register your account or log in to secure your event passes.</p>
+        </div>
+    </header>
+
+    <!-- Main Registration Container -->
+    <main class="container my-5 flex-grow-1 d-flex align-items-center justify-content-center">
+        <div class="row w-100 justify-content-center">
+            <div class="col-md-7 col-lg-5">
+                <div class="card shadow border-0 rounded-4 overflow-hidden">
+
+                    <!-- Page Switcher Buttons (with matching IDs) -->
+                    <div class="card-header bg-white border-bottom-0 pt-4 px-4 text-center">
+                        <div class="btn-group w-100 shadow-sm rounded-pill overflow-hidden" role="group">
+                            <button type="button" class="btn btn-dark py-2 active" id="show-signup">Sign Up</button>
+                            <button type="button" class="btn btn-outline-dark py-2" id="show-login">Log In</button>
+                        </div>
+                    </div>
+
+                    <!-- Form Body -->
+                    <div class="card-body p-4 p-md-5">
+                        <h3 class="card-title text-center fw-bold mb-4" id="form-title">Create an Account</h3>
+
+                        <div id="form-feedback"></div>
+
+                        <form id="auth-form">
+
+                            <!-- Full Name (Group ID added) -->
+                            <div class="mb-3" id="name-field-group">
+                                <label for="fullName" class="form-label fw-semibold">Full Name <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control form-control-lg fs-6" id="fullName" placeholder="Carlton Clarke">
+                            </div>
+
+                            <!-- Email Address -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-semibold">Email Address <span class="text-danger">*</span></label>
+                                <input type="email" class="form-control form-control-lg fs-6" id="email" placeholder="name@example.com">
+                            </div>
+
+                            <!-- Password -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label fw-semibold">Password <span class="text-danger">*</span></label>
+                                <input type="password" class="form-control form-control-lg fs-6" id="password" placeholder="••••••••">
+                            </div>
+
+                            <!-- Select Event Category (Group ID added) -->
+                            <div class="mb-4" id="event-field-group">
+                                <label for="selectedEvent" class="form-label fw-semibold">Favorite Event Category <span class="text-danger">*</span></label>
+                                <select class="form-select form-select-lg fs-6" id="selectedEvent">
+                                    <option value="" selected disabled>Choose a genre...</option>
+                                    <option value="reggae">Reggae Vibe</option>
+                                    <option value="dancehall">Dancehall Night</option>
+                                    <option value="soca">Soca Fusion</option>
+                                </select>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-dark btn-lg w-100 py-3 rounded-3 fw-bold" id="submit-btn">Complete Registration</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Island Vibes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

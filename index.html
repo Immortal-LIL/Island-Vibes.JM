@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Island Vibes - Home</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- Clean Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <span class="fs-4 me-2">🌴</span> <strong>Island Vibes</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
+                    <!-- Add id="auth-nav-item" here -->
+                    <li class="nav-item" id="auth-nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Vibrant Hero Section -->
+    <header class="text-white text-center py-5 shadow-sm" style="background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;">
+        <div class="container py-5">
+            <h1 class="display-3 fw-bold">Welcome to Island Vibes</h1>
+            <p class="lead fs-4 mt-3 col-lg-8 mx-auto">Your ultimate destination for authentic Caribbean music, live concerts, and cultural festival experiences.</p>
+            <div class="mt-4 gap-2 d-sm-flex justify-content-sm-center">
+                <a href="explore.html" class="btn btn-warning btn-lg px-4 me-sm-3 fw-bold shadow-sm">Explore Events</a>
+                <a href="register.html" class="btn btn-outline-light btn-lg px-4 shadow-sm">Join the Community</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container my-5 flex-grow-1">
+
+        <!-- Interactive Festival Carousel -->
+        <section class="mb-5">
+            <h2 class="text-center fw-bold mb-4">Upcoming Festival Highlights</h2>
+            <div id="islandCarousel" class="carousel slide shadow-lg rounded-4 overflow-hidden" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="bg-dark text-white p-5 text-center d-flex flex-column justify-content-center align-items-center" style="min-height: 320px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=1200&q=80') center/cover;">
+                            <span class="badge bg-success mb-2 px-3 py-2 fs-6">Reggae Showcase</span>
+                            <h3 class="display-6 fw-bold">Chronixx Live in Concert</h3>
+                            <p class="lead text-light">Experience roots-rock-reggae under the stars with acoustic rhythm and conscious vibes.</p>
+                            <a href="reggae.html" class="btn btn-light btn-sm px-4 rounded-pill fw-bold">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="bg-dark text-white p-5 text-center d-flex flex-column justify-content-center align-items-center" style="min-height: 320px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80') center/cover;">
+                            <span class="badge bg-danger mb-2 px-3 py-2 fs-6">Dancehall Night</span>
+                            <h3 class="display-6 fw-bold">Dancehall Night Showcase</h3>
+                            <p class="lead text-light">High-energy sound system culture with top-tier selectors and legendary artist line-ups.</p>
+                            <a href="dancehall.html" class="btn btn-light btn-sm px-4 rounded-pill fw-bold">Learn More</a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="bg-dark text-white p-5 text-center d-flex flex-column justify-content-center align-items-center" style="min-height: 320px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=80') center/cover;">
+                            <span class="badge bg-warning text-dark mb-2 px-3 py-2 fs-6">Soca Carnival</span>
+                            <h3 class="display-6 fw-bold">Soca Fusion Fest</h3>
+                            <p class="lead text-light">Feel the pulse of carnival rhythm with live brass bands and high-octane stage shows.</p>
+                            <a href="soca.html" class="btn btn-light btn-sm px-4 rounded-pill fw-bold">Learn More</a>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#islandCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#islandCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Feature Callouts Section -->
+        <section class="row text-center mt-5">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0 p-3">
+                    <div class="card-body">
+                        <div class="fs-1 text-primary mb-3">🎵</div>
+                        <h4 class="fw-bold">Authentic Rhythms</h4>
+                        <p class="text-secondary">Discover live concerts featuring Reggae, Dancehall, and Soca music directly from Caribbean artists.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0 p-3">
+                    <div class="card-body">
+                        <div class="fs-1 text-success mb-3">🌴</div>
+                        <h4 class="fw-bold">Island Experience</h4>
+                        <p class="text-secondary">Immerse yourself in cultural festivals, food vendors, sound system clashes, and beach concerts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0 p-3">
+                    <div class="card-body">
+                        <div class="fs-1 text-warning mb-3">🎟️</div>
+                        <h4 class="fw-bold">Easy Pass Booking</h4>
+                        <p class="text-secondary">Register your account in seconds to secure priority access to upcoming event tickets and VIP passes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Island Vibes. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript (Add this to every file) -->
+    <script src="app.js"></script>
+</body>
+</html>
